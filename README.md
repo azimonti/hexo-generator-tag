@@ -28,7 +28,7 @@ tag_generator:
 - **enable_index_page**: Generate a `/[config.tag_dir]/index.html` page.
   - Support following template layout: `tag-index`, `tag`, `archive`, `index`
 - **explicit_paging**: Explicit paging. (Number the first page. e.g. `page/1/index.html`)
-- **overwrite_latest**: Set the latest page. (`latest/index.html` in place of `page/N/index.html`)
+- **overwrite_latest**: Set the latest page. (`latest/index.html` in place of `page/N/index.html`). If there is a single page it requires explicitPaging=true`.
 - **verbose**: verbose output. (Output all generated routes)
 
 ## License
