@@ -19,7 +19,8 @@ tag_generator:
   per_page: 10
   order_by: -date
   explicit_paging: false
-  overwrite_latest: false
+  rename_last: false
+  localized_last: 'last'
   verbose: false
 ```
 
@@ -28,7 +29,8 @@ tag_generator:
 - **enable_index_page**: Generate a `/[config.tag_dir]/index.html` page.
   - Support following template layout: `tag-index`, `tag`, `archive`, `index`
 - **explicit_paging**: Explicit paging. (Number the first page. e.g. `page/1/index.html`)
-- **overwrite_latest**: Set the latest page. (`latest/index.html` in place of `page/N/index.html`). If there is a single page it requires explicitPaging=true`.
+- **rename_last**: Set the latest page name. (`page/last/index.html` in place of `page/N/index.html`). If there is a single page it requires explicit_paging=true`.
+- **localized_last**: Localize the last page name. (`page/最後/index.html` in place of `page/last/index.html`).
 - **verbose**: verbose output. (Output all generated routes)
 
 ## License
